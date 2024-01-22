@@ -7,6 +7,13 @@ export interface Action {
     path?: string;
     data?: any;
 }
+/**
+ * Tags
+ */
+export interface Tag {
+    name: string;
+    value: string;
+}
 export interface Version {
     actions: Action[];
     prevDocId: string;
@@ -14,13 +21,6 @@ export interface Version {
     tags?: Tag[];
     format?: string;
     signature?: any;
-}
-/**
- * Tags
- */
-export interface Tag {
-    name: string;
-    value: string;
 }
 /**
  * Network
@@ -40,8 +40,6 @@ export interface Storage {
     /**
      * Writes data to the storage.
      * @param data - The data to be stored.
-     * @param prevDocId - (Optional) The ID of the previous document.
-     * @param tags - (Optional) Any tags associated with the document.
      * @returns { docId, cost, kilobytes }
      * @throws Will throw an error if an error occurs
      */
