@@ -1,0 +1,11 @@
+{
+  "files.exclude": {
+      "**/node_modules": true, 
+      "**/build": true,
+  },
+  "eslint.format.enable": true,
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#00ccff",
+    "terminalCursor.foreground": "#ffb55f"
+  }   
+}
